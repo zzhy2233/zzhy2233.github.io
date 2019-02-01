@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>zzhy的博客</title>
+    <title>Day 1 · zzhy的博客</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -77,6 +77,8 @@
 
     <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
@@ -201,14 +203,23 @@
 </head>
 
     
-        <body class="home-body">
+        <body class="post-body">
     
     
-<header class="header index-header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/">Zzhy的博客</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">Day 1</a>
+            </div>
+    </div>
     
     <a class="home-link" href="/">Zzhy的博客</a>
 </header>
@@ -227,17 +238,17 @@ height:50vh;
     <!-- 主页  -->
     
     
-    <!-- 文章页  -->
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/index-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Zzhy的博客
-            <!-- 文章页  -->
+            Day 1
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
@@ -245,12 +256,43 @@ height:50vh;
             <!-- 主页副标题  -->
             
             
-                Never give up.
-            
-            <!-- 文章页  -->
+            <!-- 404 -->
             
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">62</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/02/01</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -351,136 +393,46 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/02/01/Day-1/">
-            
-                <span>Day 1</span>
-        </a>
-        <div class="abstract-content">
-             终于搭建起属于我自己的blog，由于本人菜所以搭了好几天。感谢大家的帮忙尤其坏哥哥zdk（其实特别好）。希望以后能和大家共同交流，一起努力一起进步。
+            <main class="main post-page">
+    <article class="article-entry">
+        <p> 终于搭建起属于我自己的blog，由于本人菜所以搭了好几天。感谢大家的帮忙尤其坏哥哥zdk（其实特别好）。希望以后能和大家共同交流，一起努力一起进步。</p>
 
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/02/01</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
     </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者：<a href="http://yoursite.com">Z hongyu</a>
+            </p><p>原文链接：<a href="http://yoursite.com/2019/02/01/Day-1/">http://yoursite.com/2019/02/01/Day-1/</a>
+            </p><p>发表日期：<a href="http://yoursite.com/2019/02/01/Day-1/">February 1st 2019, 5:39:24 pm</a>
+            </p><p>更新日期：<a href="http://yoursite.com/2019/02/01/Day-1/">February 1st 2019, 5:54:55 pm</a>
+            </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
     
     <!-- paginator  -->
-    
-</main>
-            <!-- profile -->
+    <ul class="post-paginator">
+        <li class="next">
             
-            <div class="profile">
-    <img class="profile-avatar" alt="avatar" src="/avatar/Misaka.jpg">
-    <div class="profile-name">zzhy</div>
-    
-    <div class="profile-signature">
-        『自己选择的路,就算跪着也要走完』
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
+        </li>
+        <li class="previous">
             
-                <a href="mailto:1457922496@qq.com" class="iconfont-archer email" title="email"></a>
-            
-        
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-        
     
-        
-            
-                <span class="iconfont-archer wechat" title="wechat">
-                  
-                  <img class="profile-qr" src="/assets/example_qr.png">
-                </span>
-            
-        
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
     
-        
-            
-                <span class="iconfont-archer qq" title="qq">
-                  
-                  <img class="profile-qr" src="/assets/qq.jpg">
-                </span>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
     
 
-    </div>
-    
-    
-        <div class="friends">
-            <div>FRIENDS</div>
-            
-                
-                    <span>
-                        <a href="//www.baidu.com" target="_black">friendA</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href="//www.google.com" target="_black">friendB</a>
-                    </span>
-                
-            
-                
-            
-        </div>
-    
-    
-        <div class="about-me">
-            <a href="/about">ABOUT ME</a>
-        </div>
-    
-</div>
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
             
         </div>
         <footer class="footer footer-unloaded">
@@ -566,6 +518,24 @@ height:50vh;
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -679,6 +649,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
