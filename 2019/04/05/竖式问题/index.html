@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Day 1 · zzhy的博客</title>
+    <title>zzhy的博客</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/">Zzhy的博客</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">Day 1</a>
+                <a href="#" class="post-name"></a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Day 1
+            [Untitled Post]
             <!-- 404 -->
             
         </h1>
@@ -266,12 +266,12 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">62</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">341</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/02/01</span>
+                    <span class="post-intro-time">2019/04/05</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -395,7 +395,15 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p> 终于搭建起属于我自己的blog，由于本人菜所以搭了好几天。感谢大家的帮忙尤其坏哥哥zdk（其实特别好）。希望以后能和大家共同交流，一起努力一起进步。</p>
+        <hr>
+<p>title: 竖式问题<br>date: 2019-04-05 22:29:02<br>tags:<br>—  问题描述：<br>找出形如 abc*de （三位数乘以两位数） 的算式，使得在完整的竖式中，所有数字属于一个特定的数字集合。输入数字集合 （相邻数字之间没有空格），输出所有竖式。每个竖式前应有编号，之后应有一个空行。最后输出解的总数。</p>
+<p>样例输入：</p>
+<p>2357</p>
+<p>样例输出：</p>
+<p><1><br>..775</1></p>
+<h2 id="X-33"><a href="#X-33" class="headerlink" title="X..33"></a>X..33</h2><p>.2325</p>
+<h2 id="2325"><a href="#2325" class="headerlink" title="2325."></a>2325.</h2><p>25575<br>The number of solutions = 1<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">char</span> s[<span class="number">20</span>], buf[<span class="number">99</span>];</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%s"</span>, s);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> abc = <span class="number">111</span>; abc &lt;= <span class="number">999</span>; abc++)</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> de = <span class="number">11</span>; de &lt;= <span class="number">99</span>; de++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> x = abc*(de%<span class="number">10</span>), y = abc*(de/<span class="number">10</span>), z = abc*de;</span><br><span class="line">            <span class="built_in">sprintf</span>(buf, <span class="string">"%d%d%d%d%d"</span>, abc, de, x, y, z);<span class="comment">// 1</span></span><br><span class="line">            <span class="keyword">int</span> ok = <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="built_in">strlen</span>(buf); i++)</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">strchr</span>(s, buf[i]) == <span class="literal">NULL</span>) ok = <span class="number">0</span>;<span class="comment">//在集合中查找</span></span><br><span class="line">            <span class="keyword">if</span>(ok)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">"&lt;%d&gt;\n"</span>, ++count);<span class="comment">//计数</span></span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">"%5d\nX%4d\n-----\n%5d\n%4d\n-----\n%5d\n\n"</span>, abc, de, x, y, z);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"The number of solutions = %d\n"</span>, count);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>  1.sprintf：之前用过printf和fprintf。printf输出到屏幕，fprintf输出到文件，而sprintf输出到字符串。多数情况下，屏幕总是可以输出的，文件一般也能写（除非磁盘满或者硬件损坏），但字符串就不一定了：应该保证写入的字符串有足够的空间</p>
 
     </article>
     <!-- license  -->
@@ -404,13 +412,13 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href="/2019/04/05/竖式问题/" title="">
-                    <div class="nextTitle">[Untitled Post]</div>
-                </a>
-            
         </li>
         <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2019/02/01/Day-1/" title="Day 1">
+                    <div class="prevTitle">Day 1</div>
+                </a>
             
         </li>
     </ul>
@@ -531,7 +539,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#X-33"><span class="toc-number">1.</span> <span class="toc-text">X..33</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2325"><span class="toc-number">2.</span> <span class="toc-text">2325.</span></a></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
